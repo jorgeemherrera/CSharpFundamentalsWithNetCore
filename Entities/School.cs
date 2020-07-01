@@ -1,7 +1,10 @@
+using System;
 using System.Collections.Generic;
 
 namespace CoreSchool.Entities {
   public class School {
+
+    public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
     string name;
     public string Name {
       get { return "Copy: " + name; }
